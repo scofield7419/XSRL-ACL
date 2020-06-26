@@ -10,7 +10,6 @@ codes for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Qu
       Zhang, Meishan  and
       Ji, Donghong",
     booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
-    month = jul,
     year = "2020",
     url = "https://www.aclweb.org/anthology/2020.acl-main.627",
     pages = "7014--7026",
