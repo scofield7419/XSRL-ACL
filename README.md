@@ -6,9 +6,7 @@ codes for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Qu
 ```buildoutcfg
 @inproceedings{fei-etal-2020-cross,
     title = "Cross-Lingual Semantic Role Labeling with High-Quality Translated Training Corpus",
-    author = "Fei, Hao  and
-      Zhang, Meishan  and
-      Ji, Donghong",
+    author = "Fei, Hao and Zhang, Meishan and Ji, Donghong",
     booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
     year = "2020",
     url = "https://www.aclweb.org/anthology/2020.acl-main.627",
