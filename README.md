@@ -24,7 +24,7 @@ codes for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Qu
 
 - Step2. Prepare the translated SRL parallel data.
     - The translation process should be fulfilled by you own. You can achieve it via [*Google translation API*](https://translate.google.com).
-    - The format of source side data and translated target side data should follow the example data in `Data` fold: `en-de-train-src.conllu` and `en-de-train-tgt.conllu`. 
+    - The format of source side data and translated target side data should follow the example data in `Data/upb_parallel/en-de` fold: `en-de-train-src.conllu` and `en-de-train-tgt.conllu`. 
         It's *conllu* style. 
     - We provide the *UPB-English* data which was not offered by [UPBV1.0](https://github.com/System-T/UniversalPropositions) at the time (i.e., 2019/10/1) we perform our experiments.
         
@@ -66,5 +66,5 @@ codes for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Qu
  
 
 - Download the [UPBV1.0 data](https://github.com/System-T/UniversalPropositions).
-    Please pre-process the data, making sure that one sentence in the data only at maximum contains one set of prd-args proposition.*
+    *Please pre-process the data, making sure that one sentence in the data only at maximum contains one set of prd-args proposition.*
 
