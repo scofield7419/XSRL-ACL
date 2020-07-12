@@ -7,7 +7,6 @@ from DataUtils.Common import *
 torch.manual_seed(seed_num)
 random.seed(seed_num)
 
-
 class BatchFeatures:
 
     def __init__(self):
