@@ -29,7 +29,7 @@ codes for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Qu
     - We provide the *UPB-English* data which was not offered by [UPBV1.0](https://github.com/System-T/UniversalPropositions) at the time (i.e., 2019/10/1) we perform our experiments.
         
 - Step3. Generating the aligning file for each pair of source and target language dataset.
-    - Install the [`fast_align`](https://github.com/clab/fast_align), and conducting alignment.
+    - Install the [`fast_align`](https://github.com/clab/fast_align), and conduct alignment.
     - The format of the alignment output file follows the example file `en-de-train-src2tgt-align.prob` in `Data/upb_parallel/en-de` fold. 
 
 - Step4. Start annotation projection.
@@ -46,7 +46,7 @@ codes for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Qu
 
 ----
 
-## B. Code for PGN-LSTM SRL model
+## B. PGN-LSTM SRL model
 
 - step 1. Configure the setting file *Config/config.cfg*
 
