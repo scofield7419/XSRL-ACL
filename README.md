@@ -17,7 +17,7 @@ codes for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Qu
 
 ---
 
-## Translation-based projection ##
+## A. Translation-based projection ##
 
 - Step1. Train POS taggers for each languages based on the corresponding labelled POS data (with universal POS tagset).
     - `trainPOS.py` (config the `Config/config.cfg` in advance)
