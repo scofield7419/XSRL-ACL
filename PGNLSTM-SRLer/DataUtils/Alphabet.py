@@ -7,7 +7,6 @@ from DataUtils.Common import seed_num, unkkey, paddingkey
 torch.manual_seed(seed_num)
 random.seed(seed_num)
 
-
 class Vocab:
     def __init__(self, word_vocab):
         self.word_vocab = word_vocab
