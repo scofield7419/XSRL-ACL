@@ -5,7 +5,6 @@ from DataUtils.Common import *
 torch.manual_seed(seed_num)
 random.seed(seed_num)
 
-
 def prepare_pack_padded_sequence(inputs_words, seq_lengths, device="cpu", descending=True):
 
     sorted_seq_lengths, indices = torch.sort(torch.Tensor(seq_lengths).long(), descending=descending)
