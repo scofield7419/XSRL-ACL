@@ -19,20 +19,9 @@ import torch.optim as optim
 import torch.nn as nn
 import torch.nn.utils as utils
 
-
-# solve default encoding problem
-from imp import reload
-
-defaultencoding = 'utf-8'
-if sys.getdefaultencoding() != defaultencoding:
-    reload(sys)
-    sys.setdefaultencoding(defaultencoding)
-
 # random seed
 torch.manual_seed(seed_num)
 random.seed(seed_num)
-
-
 
 class Train(object):
 
