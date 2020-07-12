@@ -9,15 +9,9 @@ from DataUtils.Embed import Embed, Embeddings
 from Engines.SequenceLabeler import SequenceLabeler
 from inference import load_test_model
 
-defaultencoding = 'utf-8'
-if sys.getdefaultencoding() != defaultencoding:
-    reload(sys)
-    sys.setdefaultencoding(defaultencoding)
-
 # random seed
 torch.manual_seed(seed_num)
 random.seed(seed_num)
-
 
 def get_learning_algorithm(config):
     """
@@ -31,7 +25,6 @@ def get_learning_algorithm(config):
         algorithm = "SGD"
     config.logger.info("learning algorithm is {}.".format(algorithm))
     return algorithm
-
 
 def save_dict2file(config, dict, path):
     """
@@ -70,7 +63,6 @@ def save_dictionary(config):
 
         config.logger.info("copy dictionary to {}".format(config.save_dir))
         shutil.copytree(config.dict_directory, "/".join([config.save_dir, config.dict_directory + "_bak"]))
-
 
 def create_all_embeds_and_vocabs_v2(config, logger, embedding_file_path_pa, multi_lingual_embed_dict, ordered_domains):
     pos_set = list([paddingkey, nullkey])
@@ -132,7 +124,6 @@ def create_all_embeds_and_vocabs_v2(config, logger, embedding_file_path_pa, mult
     argvocab = Vocab(arg_set)
 
     return wordembeddings,posembeddings, predembeddings, argvocab
-
 
 
 def create_all_embeds_and_vocabs(config, logger, embedding_file_path_pa, multi_lingual_embed_dict, ordered_domains):
