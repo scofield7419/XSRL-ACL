@@ -1,4 +1,4 @@
-# refer to https://github.com/bcmi220/unisrl/blob/master/srl_eval_utils.py
+# refer to https://github.com/bcmi220/unisrl/blob/master/srl_eval_utils.py & https://github.com/RuiCaiNLP/Semi_SRL/blob/master/nnet/run/srl/util.py
 
 class Eval:
     def __init__(self):
