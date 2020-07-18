@@ -30,8 +30,8 @@ class Eval:
 
             true_labels = [item for item in y_true[i][:sentence_length] if item != '_']
             pred_labels = [item for item in y_pred[i][:sentence_length] if item != '_']
-            self.predict_num += len(set(pred_labels))
-            self.gold_num += len(set(true_labels))
+            self.predict_num += len(pred_labels)
+            self.gold_num += len(true_labels)
 
         if self.predict_num == 0:
             self.precision = 0
