@@ -24,9 +24,9 @@ class Eval:
         for i in range(len(y_true)):
             sentence_length = all_sentence_length[i]
 
-            for p_lable, g_lable in zip(y_pred[i][:sentence_length], y_true[i][:sentence_length]):
-                if (p_lable == g_lable) and (p_lable!= '_'):
-                    self.correct_num += 1
+            for g_lable in y_true[i][:sentence_length]:
+                for p_lable in y_pred[i][:sentence_length]:
+                    if (p_lable == g_lable) and (p_lable!= '_'): self.correct_num += 1
 
             true_labels = [item for item in y_true[i][:sentence_length] if item != '_']
             pred_labels = [item for item in y_pred[i][:sentence_length] if item != '_']
