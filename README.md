@@ -1,19 +1,27 @@
-codes for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Quality Translated Training Corpus](https://www.aclweb.org/anthology/2020.acl-main.627/)
+**Codes and data for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Quality Translated Training Corpus](https://www.aclweb.org/anthology/2020.acl-main.627/)**
 
 
-### Cite:
+---
+See the [project page](https://haofei.vip/XSRL/) for more details.
 
-```buildoutcfg
-@inproceedings{fei-etal-2020-cross,
-    title = "Cross-Lingual Semantic Role Labeling with High-Quality Translated Training Corpus",
-    author = "Fei, Hao and Zhang, Meishan and Ji, Donghong",
-    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
-    year = "2020",
-    url = "https://www.aclweb.org/anthology/2020.acl-main.627",
-    pages = "7014--7026",
-}
-```
 
+---
+
+## Environment
+
+- python3.7
+- pytorch1.0.1
+- allennlp
+- huggingface-bert
+- tqdm
+ 
+
+## Dataset
+
+- Download the [UPBV1.0 data](https://github.com/System-T/UniversalPropositions).
+    *Please pre-process the data, making sure that one sentence in the data only at maximum contains one set of prd-args proposition.*
+
+- Use the `UP_English` data created by us.
 
 ---
 
@@ -35,7 +43,6 @@ codes for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Qu
 - Step4. Start annotation projection.
     - `project.py` 
 
-----
 
 #### Note:
 
@@ -50,21 +57,28 @@ codes for the ACL 2020 paper: [Cross-Lingual Semantic Role Labeling with High-Qu
 
 - step 1. Configure the setting file *Config/config.cfg*
 
-- step 2. Run with *main.py*
+- step 2. Run the file:
 
+```bash
+python main.py
+```
 
 ----
 
-#### Note:
 
-- Environment dependency:
-    - python3.7
-    - pytorch1.0.1
-    - allennlp
-    - huggingface-bert
-    - tqdm
- 
+## Citation
 
-- Download the [UPBV1.0 data](https://github.com/System-T/UniversalPropositions).
-    *Please pre-process the data, making sure that one sentence in the data only at maximum contains one set of prd-args proposition.*
+If you use our dataset, please cite the following paper:
+
+
+```buildoutcfg
+@inproceedings{fei-etal-2020-cross,
+    title = "Cross-Lingual Semantic Role Labeling with High-Quality Translated Training Corpus",
+    author = "Fei, Hao and Zhang, Meishan and Ji, Donghong",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    year = "2020",
+    url = "https://www.aclweb.org/anthology/2020.acl-main.627",
+    pages = "7014--7026",
+}
+```
 
